@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZj-QL-513">
+                                <rect key="frame" x="15" y="210" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901785714285" green="0.38708147321428571" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="旋转">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFl-ZV-0pv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vne-Bb-2Tw">
+                                <rect key="frame" x="16" y="52" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Game">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evf-6g-U8S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-za-vd4">
+                                <rect key="frame" x="201" y="52" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="2DDemo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tdDemoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWd-F5-4sS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tz1-u6-aaX">
+                                <rect key="frame" x="17" y="111" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3DDemo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="thdDemoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcX-n7-jnf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Mb-GU-W0Z">
+                                <rect key="frame" x="201" y="210" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="太阳系">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rotatoCameraClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mI-h3-Bmu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23v-xd-Ona">
+                                <rect key="frame" x="17" y="276" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="跟随移动">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flowCameraClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aB4-wv-Nia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiH-QE-PFH">
+                                <rect key="frame" x="201" y="276" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="探测平地">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlaneAnchorClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Di0-2a-b8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nz-KT-EeY">
+                                <rect key="frame" x="17" y="348" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="HomeHero">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeHeroBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RtA-fQ-Rcc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l2-SF-278">
+                                <rect key="frame" x="201" y="111" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="3D位置">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="thdPositionDemoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gBf-us-ZGv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-ib-eS0">
+                                <rect key="frame" x="201" y="348" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="全景照片">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="thdPictureBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GAQ-8Q-vJe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xL9-Ce-Zui">
+                                <rect key="frame" x="15" y="414" width="148" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22527901789999999" green="0.38708147320000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="全景视频">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="thdVideoBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLQ-nw-yEE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flowCameraAR" destination="23v-xd-Ona" id="ULm-3f-QBg"/>
+                        <outlet property="game" destination="Vne-Bb-2Tw" id="cIg-zz-g9C"/>
+                        <outlet property="homeHeroBtn" destination="3Nz-KT-EeY" id="amQ-KN-4XY"/>
+                        <outlet property="planeAnchorAR" destination="CiH-QE-PFH" id="dXK-tS-D7U"/>
+                        <outlet property="rotatoCameraAR" destination="8Mb-GU-W0Z" id="m17-6e-Tv3"/>
+                        <outlet property="startAR" destination="lZj-QL-513" id="T9b-Dv-vPF"/>
+                        <outlet property="tdDemo" destination="TVL-za-vd4" id="g1n-Nv-Y4i"/>
+                        <outlet property="thdDemo" destination="tz1-u6-aaX" id="4sz-EP-G3B"/>
+                        <outlet property="thdPictureBtn" destination="Shu-ib-eS0" id="usG-CJ-cnO"/>
+                        <outlet property="thdPositonDemo" destination="1l2-SF-278" id="fOV-KK-Tqy"/>
+                        <outlet property="thdVideoBtn" destination="xL9-Ce-Zui" id="bvv-5u-Jvl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202" y="-84"/>
+        </scene>
+    </scenes>
+</document>
